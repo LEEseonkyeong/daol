@@ -12,6 +12,7 @@
     background: url("../images/mainslide1.jpg") no-repeat center top;
     border-bottom: 1px solid gray;
     position: fixed;
+    z-index: 999;
 }
 
 .head_opa {
@@ -185,7 +186,7 @@
 .con_inner2 {
     width: 1000px;
     margin: 0 auto;
-    padding: 80px 0 60px;
+    padding: 100px 0 60px;
 }
 
 .con_inner2 .map {
@@ -224,7 +225,9 @@
     padding: 100px 0 60px;
 }
 
-.con_wrap3 {}
+.con_wrap3 {
+    overflow: hidden;
+}
 
 .con_wrap3 li {
     width: calc(100% / 3);
@@ -245,4 +248,268 @@
     text-align: justify;
     line-height: 1.7;
     font-size: 13px;
+}
+
+
+
+
+/* activity */
+.activity {
+    padding: 30px 0;
+}
+
+.activity img {
+    width: 100%;
+}
+
+.activity h3 {
+    margin: 20px 0;
+}
+
+.activity p {
+    margin-bottom: 20px;
+}
+
+
+
+
+/* aticle */
+
+.aticle {
+    overflow: hidden;
+}
+
+.aticle h3 {
+    padding: 10px 0;
+}
+
+.aticle .p_first {
+    border-bottom: 2px solid #252525;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.aticle p {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* portfolio */
+.con_inner4 {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0 60px;
+}
+
+.img_list {
+    overflow: hidden;
+}
+
+.img_list li {
+    float: left;
+    width: calc(100% / 4);
+}
+
+.img_list li div {
+    position: relative;
+    /* line-height: 0; */
+    /* div a 에 배경색이 이미지랑 딱 맞아 떨어지지 않을때
+    line-height: 0; 또는 li div img에 display: block; */
+}
+
+.img_list li div a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+}
+
+.img_list li div a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img_list li div a span {
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+
+    /* transform: translate(-50%, -50%); */
+
+    /* left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -25px; */
+
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px 0;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: gray;
+}
+
+.img_list li div a span:hover {
+    color: rgb(59, 193, 246);
+    background: rgb(255, 255, 255);
+}
+
+.img_list li div img {
+    width: 100%;
+    display: block;
+}
+
+.img_list li h4 {
+    padding: 10px 0 20px;
+}
+
+.img_list li h5 {
+    padding-bottom: 30px;
+    font-weight: 400;
+}
+
+
+
+
+/* consult */
+.con_inner5 {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0 60px;
+}
+
+.form_table{
+    width: 100%;
+    border: 1px solid white;
+}
+
+.t_left{
+    width: 30%;
+    background: #ddd;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form_table td{
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.phone3{
+    width: 50px;
+}
+
+.txt_cont{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+
+.t_right{
+    text-align: left;
+}
+
+.txt_pre{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+}
+
+.img_center{
+    text-align: center;
+}
+
+.btn{
+    text-align: center;
+    padding: 20px 0;
+}
+.btn input{
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+
+
+/* contact */
+.con_inner6 {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    /* padding: 100px 0 60px; */
+    margin-top: 50px;
+    background: url("../images/7-min.jpg") no-repeat center center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.con_inner6_opa{
+    height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+
+.con_inner6_opa h2{
+    padding: 70px 0 30px;
+
+}
+.con_inner6_opa p{
+    padding: 0 0 20px;
+
+}
+
+.sns{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.sns li{
+    float: left;
+    width: calc(100% / 3);
+}
+
+.sns li span{
+    font-size: 12px;
+}
+
+
+
+
+/* footer */
+
+.foot_up{
+    background: #252525;
+    color: white;
+    padding: 50px 0;
+}
+
+.foot_up_inner{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.foot_up_inner h2{
+    margin-bottom: 20px;
+}
+
+.foot_down{
+    background: black;
+    color: white;
+    padding: 25px 0;
+}
+
+.foot_down_inner{
+    width: 1000px;
+    margin: 0 auto;
 }
